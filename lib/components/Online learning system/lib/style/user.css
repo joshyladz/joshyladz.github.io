@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+}
+:root {
+    --main-color: #00B0F4;
+    --bg-color: #2C2F33;
+    --section-color: #23272A;
+    --light-green: #A2D3D7;
+    --text-color: #F1F1F1;
+    --plain-white: white;
+    --purple: #5865F2;
+    --footer: #121212;
+    --box-color: #F1F1F1;
+    --online: #43B581;
+    --offline: #575757;
+    --box-bg-color: #99AAB5;
+    
+}
+body {
+    background-color: var(--bg-color);
+}
+
+
+/* Left Sidebar */
+.left-sidebar {
+    background-color: var(--section-color);
+    position: fixed;
+    width: 230px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+.user-acct {
+    padding: 50px 8%;
+    display: flex;
+    gap: 1rem;
+}
+.user-img {
+    flex: 20%;
+}
+.user-acct img {
+    width: 35px;
+}
+.user-information {
+    flex: 80%;
+}
+.user-information h6 {
+    font-size: 16px;
+    font-weight: 500;
+}
+.user-information p {
+    font-size: 14px;
+}
+.nav-link {
+    margin-left: 4%;
+    margin-top: 20px;
+    padding: 10%;
+}
+.link-box {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+}
+.link-box i {
+    font-size: 23px;
+    flex: 30%;
+}
+.link-box p {
+    flex: 70%;
+}
+
+/* Right-side-bar */
+.right-sidebar {
+
+    background-color: var(--section-color);
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    width: 220px;
+    border-radius: 10px;
+}
+.right-sidebar-container {
+    padding: 0 6%;
+}
+.showy-box {
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 100%;
+    height: 150px;
+    background-color: var(--box-color);
+    border-top: 12px solid var(--purple);
+    text-align: center;
+}
+.title {
+    color: black;
+    font-size: 14px;
+}
+/* Classroom-section */
+.classroom-section {
+    margin: 230px 22%;
+}
+.classroom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+.classroom-box {
+    background-color: var(--box-color);
+    height: 200px;
+    border-radius: 8px;
+    border-top: 12px solid var(--online);
+    text-align: center;
+}
+.classroom-bg {
+    background-color: var(--box-bg-color);
+    width: 100%;
+    height: 80px;
+}
+.classroom-box img {
+    width: 60px;
+    margin-top: -50px;
+}
+.classroom-box p {
+    color: black;
+}
+.classroom-box div {
+    font-size: 14px;
+    color: var(--footer);
+    font-weight: 700;
+}
