@@ -1,0 +1,328 @@
+@media only screen and (max-width: 991px) {
+  .nav_bar .container .navs_bar li {
+    margin: 10px 0;
+  }
+  .nav_bar .container .navs_bar li a {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .nav_bar {
+    padding-top: 10px;
+  }
+  .nav_bar .container .navs_bar {
+    margin: 0 1rem;
+  }
+  .nav_bar .container .navs_bar .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -800px;
+    background-color: #171A21;
+    display: flex;
+    flex-direction: column;
+    width: 35vh;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 9999;
+    transition: 0.5s;
+  }
+  .nav_bar .container .navs_bar .nav-menu li {
+    padding: 5px;
+  }
+  .nav_bar .container .navs_bar .nav-menu li a {
+    display: inline-block;
+  }
+  .nav_bar .container .navs_bar .side-menu-in {
+    right: 0;
+  }
+  .nav_bar .container .navs_bar .open-menu-btn {
+    display: block;
+    width: 25px;
+    cursor: pointer;
+  }
+  .nav_bar .container .navs_bar .close-menu-btn {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+  }
+  .introduction .container .itr-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .introduction .container .itr-wrapper .my-img {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #DADADA;
+}
+
+body {
+  background-image: radial-gradient(circle, #2a475e, #293f53, #273848, #25313d, #222a33, #21272e, #1f242a, #1e2125, #1e2125, #1e2125, #1e2125, #1e2125);
+}
+
+.nav_bar .container {
+  padding: 5px 0;
+}
+.nav_bar .container .navs_bar {
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.nav_bar .container .logo {
+  width: 100px;
+}
+.nav_bar .container .nav-menu {
+  margin: 0;
+}
+.nav_bar .container li {
+  display: inline-block;
+  padding: 20px;
+}
+.nav_bar .container li:hover i {
+  color: #2192FF;
+}
+.nav_bar .container li:hover a {
+  color: #2192FF;
+}
+.nav_bar .container i {
+  padding-right: 5px;
+}
+.nav_bar .container a {
+  color: white;
+  text-decoration: none;
+  align-items: center;
+}
+.nav_bar .container .open-menu-btn {
+  display: none;
+  width: 25px;
+}
+.nav_bar .container .close-menu-btn {
+  display: none;
+  width: 22px;
+}
+
+.introduction .container .intro-text {
+  color: white;
+  height: 40vh;
+}
+.introduction .container .intro-text h1 {
+  margin-bottom: 1rem;
+}
+.introduction .container .intro-text span {
+  font-size: 20px;
+  color: #2192FF;
+  margin-bottom: 0.5rem;
+}
+.introduction .container .intro-text p {
+  color: #DADADA;
+}
+.introduction .container .intro-text button {
+  padding: 10px 0;
+  color: white;
+  border: none;
+  outline: none;
+  width: 150px;
+  border-radius: 3px;
+  background-image: linear-gradient(to right, #06bfff, #00afff, #009dff, #008aff, #2d73ff);
+}
+.introduction .container .my-img {
+  text-align: center;
+}
+.introduction .container .my-img img {
+  width: 350px;
+  border-radius: 50%;
+}
+
+.about {
+  color: #DADADA;
+  background-color: #171A21;
+}
+.about .container .about_ .about-left h6 {
+  font-size: 14px;
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+  color: #DADADA;
+}
+.about .container .about_ .about-left .title {
+  margin-bottom: 3rem;
+  font-weight: 700;
+  color: #DADADA;
+}
+.about .container .about_ .about-left .infos span {
+  font-weight: 600;
+  color: #DADADA;
+}
+.about .container .about_ .about-left .infos .active {
+  color: #01B30E;
+  font-weight: 700;
+}
+.about .container .about_ .about-left .txt-al {
+  text-align: center;
+  padding: auto 0;
+  border-top: 3px solid #2192FF;
+  margin: 0 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.about .container .skills .title {
+  margin-bottom: 3rem;
+  font-weight: 700;
+  color: #DADADA;
+}
+.about .container .skills .row .progess-bar {
+  padding: 1rem 2.5rem;
+}
+.about .container .skills .row .progess-bar progress {
+  width: 100%;
+  color: white;
+}
+
+.services .container .title {
+  margin-bottom: 3rem;
+  font-weight: 700;
+  color: #DADADA;
+}
+.services .service-container {
+  margin: 0 5rem;
+}
+.services .service-container .service {
+  background-color: #171A21;
+  border-radius: 5px;
+  padding: 50px;
+  border-top: 2px solid #2192FF;
+  cursor: pointer;
+  transition: 0.9s;
+}
+.services .service-container .service i {
+  font-size: 32px;
+  margin-bottom: 2rem;
+}
+.services .service-container .service h6 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.services .service-container .service:hover {
+  background-color: #2192FF;
+}
+
+.portfolio {
+  background-color: #171A21;
+}
+.portfolio .container h6 {
+  font-weight: 700;
+  color: #DADADA;
+}
+.portfolio .container .port-wrapper .port-work {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 4rem;
+}
+.portfolio .container .port-wrapper .img-wrapper {
+  border-top: 3px solid #2192FF;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.portfolio .container .port-wrapper .hvr-des {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  text-align: center;
+  padding: 25% 0;
+  transition: 0.3s;
+}
+.portfolio .container .port-wrapper .hvr-des button {
+  padding: 0.5rem 2.5rem;
+  outline: none;
+  border: none;
+  background-color: #171A21;
+  border-radius: 4px;
+}
+.portfolio .container .port-wrapper .hvr-des a {
+  color: #DADADA;
+}
+.portfolio .container .port-wrapper .img-wrapper:hover .hvr-des {
+  right: 0;
+}
+
+.contact .container .title {
+  margin-bottom: 3rem;
+  font-weight: 700;
+  color: #DADADA;
+}
+.contact .container .left-contact .contact-des {
+  margin-bottom: 2rem;
+}
+.contact .container .left-contact h6 {
+  font-size: 20px;
+}
+.contact .container .left-contact p {
+  max-width: 400px;
+}
+.contact .container .left-contact .contact-info {
+  margin-bottom: 1rem;
+}
+.contact .container .left-contact .contact-info .icon {
+  margin-right: 1rem;
+}
+.contact .container .left-contact .contact-info .icon i {
+  font-size: 32px;
+}
+.contact .container .s-m i {
+  font-size: 24px;
+  margin-right: 1rem;
+}
+.contact .container .contact-right form {
+  width: 100%;
+}
+.contact .container .contact-right form input {
+  background-color: #171A21;
+  outline: none;
+  border: 1px solid #171A21;
+  margin-bottom: 1rem;
+  padding: 0.2rem 0;
+  padding-left: 12px;
+  border-radius: 3px;
+}
+.contact .container .contact-right form textarea {
+  padding-top: 0.2rem;
+  padding-left: 12px;
+  background-color: #171A21;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+.contact .container .contact-right form button {
+  background-image: linear-gradient(to right, #06bfff, #00afff, #009dff, #008aff, #2d73ff);
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.footer {
+  background-color: black;
+}
+.footer .container p {
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 0;
+}/*# sourceMappingURL=style.css.map */

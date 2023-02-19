@@ -1,0 +1,183 @@
+.card {
+    transition: .3s;
+    border: none;
+}
+/* Header */
+.header{
+    position: relative;
+    border-bottom: 1px solid #dadce0;
+ }
+.logo {
+    font-size: 24px;
+    font-weight: 500;
+}
+.icons i {
+    font-size: 22px;
+    padding: 0 .5rem;
+    cursor: pointer;
+}
+.categories {
+    list-style: none;
+    padding: 0;
+}
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+}
+.menu {
+    display: none;
+}
+
+/* Section */
+.btn-shop-now {
+    padding: .5rem 2.3rem;
+    border: 1px solid #575757;
+    background-color: white;
+    
+    transition: .3s;
+}
+.btn-shop-now:hover {
+    background-color: #212529;
+    color: white;
+}
+.icon-img img {
+    padding: 20px;
+    min-width: 100px;
+    max-width: 100px;
+    width: 100%;
+}
+/* Shop by Cat */
+.shop-cat {
+    border: 1px solid #dadce0;
+    border-radius: 7px;
+}
+/* featured product */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+    gap: 1.3rem;
+}
+.product {
+    transition: .3s;
+}
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+.product-img {
+    margin: auto;
+}
+.product-img img {
+    border-radius: 2%;
+}
+.product-des {
+    padding: 8px 5%;
+}
+.product-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.product-price {
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+/* ads  */
+.ads {
+    background-color: #f4f4f4;
+}
+/* Subscribe */
+.subscribe {
+    background-color: #f4f4f4;
+}
+.email-adress {
+    padding: .5rem 2.3rem .5rem .5rem; 
+    width: 100%;
+    max-width: 300px;
+    
+}
+.subscribe button{
+    padding: .5rem 2.3rem;
+    border: 1px solid #212529;
+    color: white;
+}
+/* Just for you */
+/* Footer */
+.footer-link {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.ft-link h6 {
+    margin: 14px 0; 
+}
+.ft-link p {
+    font-size: 15px;
+    cursor: pointer;
+}
+.ft-link p:hover {
+    text-decoration: underline;
+}
+.sm-link  {
+    padding-bottom: 28px ;
+}
+.sm-link i {
+    font-size: 22px;
+    padding-right: 16px;
+    padding-top: 12px;
+    cursor: pointer;
+}
+/* Credits */
+.credits {
+    border-top: 1px solid #575757;
+}
+.credits p {
+    padding: 0 20px;
+    cursor: pointer;
+}
+.credits p:hover {
+    text-decoration: underline;
+}
+
+/* media  */
+
+@media only screen and (max-width: 992px) {
+    .menu {
+        display: block;
+    }
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+    }
+    .header .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -500px;
+        width: 30vh;
+        height: 100vh;
+        background-color: #212529;
+        display: flex;
+        z-index: 9999;
+
+        transition: .5s;
+    }
+    .header .navmenu-in {
+        right: 0;
+    }
+    .navbar-collapse {
+        align-items: flex-start;
+    }
+    .header .nav-menu {
+        padding: 20px;
+    }
+    .header .nav-menu ul {
+        padding-top: 50px;
+    }
+    .header .nav-menu ul li {
+        padding: 5px;
+    }
+    .header .nav-menu ul li a{
+        color: white;
+    }
+}

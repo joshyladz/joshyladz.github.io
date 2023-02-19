@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/26243d871e.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="lib/styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="nav_bar">
+        <div class="container">
+            <div class="d-flex navs_bar">
+            <img class="logo" src="lib/img/MELLI_BLUE_DARK-BG.png" alt="">
+            <img class="open-menu-btn" src="lib/img/icon/menu-burger (1).png" alt="">
+                <ul id="navmenu" class="nav-menu ">
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-user"></i>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-handshake-simple"></i>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-briefcase"></i>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-briefcase"></i>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <img class="close-menu-btn" src="lib/img/icon/cross (1).png" alt="">
+                </ul>    
+            </div>        
+        </div>
+    </header>
+    <!-- introduction -->
+    <section class="introduction ">
+        <div class="container py-4" id="home">
+            <div class="d-md-flex my-5 itr-wrapper">
+                <div class="col py-5 intro-text">
+                    <h1>Hello, I'm Joseph Ladra</h1>
+                    <span>Web Developer</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing italeo tellus, luctus nec  mattis pulvinar dapibus leo.</p>
+                 <button>Hire me</button>
+                </div>
+                <div class="col my-img">
+                    <img class="" src="lib/img/21004063.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about -->
+    <section class="about my-5">
+        <div class="container" id="about">
+            <div class="d-md-flex about_ py-5">
+                <div class="col about-left">
+                    <h6>ABOUT ME</h6>
+                    <p class="title">PERSONAL INFOS</p>
+                    <div class="row">
+                        <div class="col infos">
+                            <p>First Name: <span>Joseph</span></p>
+                            <p>Last Name: <span>Ladra</span></p>
+                            <p>Age: <span>18 Years old</span></p>
+                            <p>Nationality: <span>Filipino</span></p>
+                        </div>
+                        <div class="col infos">
+                            <p>Experience: <span>1 year</span></p>
+                            <p>Adress: <span>Cagayan de Oro</span></p>
+                            <p>Email: <span>josh.ladrax@gmail.com</span></p>
+                            <p>Freelance: <span class="active">Available</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="skills py-5">
+                <p class="title">MY SKILLS</p>
+                <div class="row">
+                    <div class="col-md-6 progess-bar">
+                        <div class="progess-percentage d-flex justify-content-between">
+                            <h6>HTML / CSS</h6>
+                            <h6>32%</h6>
+                        </div>
+                        <div class="progress-container">
+                            <progress id="file" value="32" max="100"></progress>
+                        </div>
+                    </div>
+                    <div class="col-md-6 progess-bar">
+                        <div class="progess-percentage d-flex justify-content-between">
+                            <h6>WEB DESIGN</h6>
+                            <h6>32%</h6>
+                        </div>
+                        <div class="progress-container">
+                            <progress id="file" value="32" max="100"></progress>
+                        </div>
+                    </div>
+                    <div class="col-md-6 progess-bar ">
+                        <div class="progess-percentage d-flex justify-content-between">
+                            <h6>JAVASCRIPT</h6>
+                            <h6>32%</h6>
+                        </div>
+                        <div class="progress-container">
+                            <progress id="file" value="32" max="100"></progress>
+                        </div>
+                    </div>
+                    <div class="col-md-6 progess-bar">
+                        <div class="progess-percentage d-flex justify-content-between">
+                            <h6>WEB DEVELOPMENT</h6>
+                            <h6>32%</h6>
+                        </div>
+                        <div class="progress-container">
+                            <progress id="file" value="32" max="100"></progress>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services -->
+    <section class="services">
+        <div class="container" id="services">
+            <p class="title">SERVICES</p>
+            <div class="row gap-3 service-container">
+                <div class="col service">
+                    <i class="fa-solid fa-palette"></i>
+                    <h6>GRAPHIC DESIGN</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, provident?</p>
+                </div>
+                <div class="col service">
+                    <i class="fa-solid fa-desktop"></i>
+                    <h6>WEB DESIGN</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, provident?</p>
+                </div>
+                <div class="w-100 d-none d-md-block"></div>
+                <div class="col service">
+                    <i class="fa-solid fa-paintbrush"></i>
+                    <h6>UI / UX</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, provident?</p>
+                </div>
+                <div class="col service">
+                    <i class="fa-solid fa-code"></i>
+                    <h6>WEB DEVELOPMENT</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, provident?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio -->
+    <section class="portfolio py-5 my-5">
+        <div class="container py-5" id="portfolio">
+            <h6>PORTFOLIO</h6>
+            <h3>My Amazing Work</h3>
+            <div class="port-wrapper py-5">
+                <div class=" pt-5  pb-3 align-items-center port-work">
+                    <div class="img-wrapper">
+                        <img class="img-fluid" src="lib/img/portofolio/e-commerce.png" alt="">
+                        <div class="hvr-des">
+                            <button>
+                                <a href="lib/components/Find Cart eCommerce/index.html">View Site</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img class="img-fluid" src="lib/img/portofolio/e-learn.png" alt="">
+                        <div class="hvr-des">
+                            <button>
+                                <a href="lib/components/Find Cart eCommerce/index.html">View Site</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img class="img-fluid" src="lib/img/portofolio/login-form.png" alt="">
+                        <div class="hvr-des">
+                            <button>
+                                <a href="lib/components/Find Cart eCommerce/index.html">View Site</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact my-5">
+        <div class="container p-5" id="contact">
+            <p class="title">CONTACT</p>
+            <div class="d-md-flex gap-3">
+                <div class="col left-contact">
+                    <h6>Get in Touch</h6>
+                    <p class="contact-des">Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                    <div class="contact-info d-flex">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h6>EMAIL ME</h6>
+                            <p>josh.ladrax@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="s-m">
+                        <div class="sm-icons mb-5">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex contact-right">
+                    <form action="" class="d-flex flex-column">
+                        <input type="text" placeholder="Your name...">
+                        <input type="text" placeholder="Email adress...">
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        <button>SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer"> 
+        <div class="container">
+            <p>Copyright © 2023. MELLI. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="lib/script/main.js"></script>
+</body>
+</html>

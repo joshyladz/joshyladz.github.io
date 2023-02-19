@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Cart</title>
+   <link rel="icon" type="image/png" href="lib/img/logo/grocery-store.png">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="lib/styles/style.css">
+    <!-- fontawesome -->
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container ">
+            <div class="navbar-expand-lg d-flex align-items-center py-3 justify-content-between">
+                <div class="logo brand-name pe-5">
+                    Find Cart
+                </div>
+                <div class="collapse navbar-collapse nav-menu " id="navmenu">   
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item px-3 ">
+                            <a class="nav-link p-0" href="#">Home</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link p-0" href="#">Categories</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link p-0" href="#">Products</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link p-0" href="#">Pages</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link p-0" href="#">Blog</a>
+                        </li>
+                        <img class="menu-icon close-menu" id="close-menu" src="lib/img/icon/close menu.png" alt="">
+                    </ul>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="menu">
+                    <img class="menu-icon " id="open-menu" src="lib/img/icon/hamburger.png" alt="">
+                </div>
+            </div>
+       
+        </div>
+    </header>
+
+    <!-- hero -->
+    <section class="hero my-5">
+        <div class="container ">
+            <div class="container-fluid">
+                <div class="d-md-flex align-items-center flex-reverse">
+                    <div class="col p-e-5">
+                        <h1>Your Perfect Outfit</h1>
+                        <h4>From $399</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Repudiandae neque magni repellat.</p>
+                        <button type="button" class="btn-shop-now mb-5">SHOP NOW</button>
+                    </div>
+                    <div class="col">
+                        <div class="img-fluid p-0" >
+                            <img class="img-fluid" src="lib/img/intro/bg.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shop by category -->
+    <section class="shop-by-category text-center my-5">
+        <div class="container">
+                <h5 class="pb-5 s-b-c">Shop by Category</h5>
+            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <div class="col-lg shop-cat">
+                    <div class="card">
+                        <div class="card-body icon-img">
+                            <img class="img-fluid" src="lib/img/icon/211857_man_icon.png" alt="">
+                        </div>
+                        <h6>Men</h6>
+                    </div>
+                </div>
+                <div class="col-lg shop-cat">
+                    <div class="card ">
+                        <div class="card-body icon-img ">
+                            <img class="img-fluid" src="lib/img/icon/211945_woman_icon.png" alt="">
+                        </div>
+                        <h6>Women</h6>
+                    </div>
+                </div>
+                <div class="col-lg shop-cat">
+                    <div class="card">
+                        <div class="card-body icon-img">
+                            <img class="img-fluid" src="lib/img/icon/352220_watch_icon.png" alt="">
+                        </div>
+                        <h6>Accessories</h6>
+                    </div>
+                </div>
+                <div class="col-lg shop-cat">
+                    <div class="card">
+                        <div class="card-body icon-img">
+                            <img class="img-fluid" src="lib/img/icon/5912559_accessories_fashion_footwear_man_shoes_icon.png" alt="">
+                        </div>
+                        <h6>Footwear</h6>
+                    </div>
+                </div>
+                <div class="col-lg shop-cat">
+                    <div class="card">
+                        <div class="card-body icon-img">
+                            <img class="img-fluid" src="lib/img/icon/2205215_bag_paper_shopping_store_icon.png" alt="">
+                        </div>
+                        <h6>Bags</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products py-5">
+        <div class="container">
+            <h5 class="text-center pb-5">Featured Products</h5>
+            <div class="product-grid">
+                <div class="product">
+                    <div class="card m-auto">
+                        <div class="card-body p-0 product-img">
+                            <img class="img-fluid" src="lib/img/products/1.png" alt="">
+                        </div>
+                        <div class="product-des ">
+                            <div class="product-title">Korean Fashion</div>
+                            <div class="product-price">$19.99</div>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card">
+                        <div class="card-body p-0 product-img">
+                            <img class="img-fluid" src="lib/img/products/2.png" alt="">
+                        </div>
+                        <div class="product-des ">
+                            <div class="product-title">Korean Fashion</div>
+                            <div class="product-price">$19.99</div>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card">
+                        <div class="card-body p-0 product-img">
+                            <img class="img-fluid" src="lib/img/products/3.png" alt="">
+                        </div>
+                        <div class="product-des">
+                            <div class="product-title">Korean Fashion</div>
+                            <div class="product-price">$19.99</div>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card">
+                        <div class="card-body p-0 product-img">
+                            <img class="img-fluid" src="lib/img/products/4.png" alt="">
+                        </div>
+                        <div class="product-des ">
+                            <div class="product-title">Korean Fashion</div>
+                            <div class="product-price">$19.99</div>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card">
+                        <div class="card-body p-0 product-img">
+                            <img class="img-fluid" clas src="lib/img/products/5.png" alt="">
+                        </div>
+                        <div class="product-des ">
+                            <div class="product-title">Korean Fashion</div>
+                            <div class="product-price">$19.99</div>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ads -->
+    <section class="ads my-5">
+        <div class="container py-5">
+            <div class="d-md-flex align-items-center men-shirt-box">
+                    <div class="col">
+                    <img class="img-fluid mb-5" src="lib/img/products/2b69d1677f9dd8ea8fdf1a833fa578ca 1.png" alt="">
+                </div>
+                <div class="col">
+                    <h1>Mens Shirt</h1> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       <br> Voluptas, reprehenderit. Magnam officiis soluta laboriosam 
+                       <br> animi officia nam nihil ipsum doloremque!</p>
+                    <button type="button" class="btn-shop-now mb-5">VIEW MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Just for you -->
+    <section class="just-for-you my-5">
+        <div class="container py-5">
+            <h5 class="text-center pb-5">Just For You</h5>
+            <div class="product-grid">
+                <div class="product">
+                    <div class="card">
+                        <div class="card-body p-0 product-img">
+                            <img class="img-fluid" clas src="lib/img/just-for-you/sg-11134201-22110-qg5natqqvzjv84 1.png" alt="">
+                        </div>
+                        <div class="product-des">
+                            <div class="product-title">Korean Fashion</div>
+                            <div class="product-price">$19.99</div>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card">
+                        <div class="card-body p-0 product-img">
+                            <img class="img-fluid" clas src="lib/img/just-for-you/image 41.png">
+                        </div>
+                        <div class="product-des ">
+                            <div class="product-title">Korean Fashion</div>
+                            <div class="product-price">$19.99</div>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card">
+                        <div class="card-body p-0 product-img">
+                            <img class="img-fluid" clas src="lib/img/just-for-you/image 40.png" alt="">
+                        </div>
+                        <div class="product-des ">
+                            <div class="product-title">Korean Fashion</div>
+                            <div class="product-price">$19.99</div>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card">
+                        <div class="card-body p-0 product-img">
+                            <img class="img-fluid" clas src="lib/img/just-for-you/image 39.png" alt="">
+                        </div>
+                        <div class="product-des ">
+                            <div class="product-title">Korean Fashion</div>
+                            <div class="product-price">$19.99</div>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card">
+                        <div class="card-body p-0 product-img">
+                            <img class="img-fluid" clas src="lib/img/just-for-you/image 38.png" alt="">
+                        </div>
+                        <div class="product-des ">
+                            <div class="product-title">Korean Fashion</div>
+                            <div class="product-price">$19.99</div>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card">
+                        <div class="card-body p-0 product-img">
+                            <img class="img-fluid" clas src="lib/img/just-for-you/image 37.png">
+                        </div>
+                        <div class="product-des ">
+                            <div class="product-title">Korean Fashion</div>
+                            <div class="product-price">$19.99</div>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card">
+                        <div class="card-body p-0 product-img">
+                            <img class="img-fluid" clas src="lib/img/just-for-you/image 36.png" alt="">
+                        </div>
+                        <div class="product-des ">
+                            <div class="product-title">Korean Fashion</div>
+                            <div class="product-price">$19.99</div>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card">
+                        <div class="card-body p-0 product-img">
+                            <img class="img-fluid" clas src="lib/img/just-for-you/image 35.png" alt="">
+                        </div>
+                        <div class="product-des ">
+                            <div class="product-title">Korean Fashion</div>
+                            <div class="product-price">$19.99</div>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card">
+                        <div class="card-body p-0 product-img">
+                            <img class="img-fluid" clas src="lib/img/just-for-you/image 34.png" alt="">
+                        </div>
+                        <div class="product-des ">
+                            <div class="product-title">Korean Fashion</div>
+                            <div class="product-price">$19.99</div>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card">
+                        <div class="card-body p-0 product-img">
+                            <img class="img-fluid" clas src="lib/img/just-for-you/image 33.png" alt="">
+                        </div>
+                        <div class="product-des ">
+                            <div class="product-title">Korean Fashion</div>
+                            <div class="product-price">$19.99</div>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- subscribe -->
+    <section class="subscribe ">
+        <div class="container py-4 ">
+                <h4>Sign Up For Find Cart News</h4>
+                <p>Stay informed about the latest style advice and product launches.
+                Learn more about our emails and our Privacy Policy.</p>
+                <input type="text" placeholder="Email adress" class="email-adress">
+                <button type="button" class="btn-submit mb-5 bg-dark">SUBMIT</button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-link py-5">
+                <div class="ft-link">
+                    <h6>FEATURES</h6>
+                    <p>Help Center</p>
+                    <p>Paid With Mobile</p>
+                    <p>Status</p>
+                    <p>Changelog</p>
+                </div>
+                <div class="ft-link">
+                    <h6>INFORMATION</h6>
+                    <p>About</p>
+                    <p>Customer Service</p>
+                    <p>Shipping & Returns</p>
+                    <p>Blog</p>
+                </div>
+                <div class="ft-link">
+                    <h6>CUSTOMER SERVICE</h6>
+                    <p>About</p>
+                    <p>Customer Service</p>
+                    <p>Shipping & Returns</p>
+                    <p>Blog</p>
+                </div>
+                <div class="ft-link">
+                    <div class="sm-link">
+                        <h6>KEEP IN TOUCH</h6>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </div>
+                    <div class="payment-methods">
+                        <h6>PAYMENT ACCEPT</h6>
+                        <img src="lib/img/icon/image 46.png" alt="">
+                        <img src="lib/img/icon//image 47.png" alt="">
+                        <img src="lib/img/icon//image 48.png" alt="">
+                        <img src="lib/img/icon//image 49.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- credits -->
+    <div class="section">
+        <div class="container py-2 credits">
+            <div class="d-flex">
+                <span>© Find Cart 2023</span>
+                <p>Privacy Policy</p>
+                <p>Terms</p>
+            </div>
+           
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="lib/script/main.js"></script>
+    <!-- font awesome -->
+ 
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>
